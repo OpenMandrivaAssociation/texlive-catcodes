@@ -1,16 +1,17 @@
-# revision 27763
+# revision 28210
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
+# catalog-ctan /macros/generic/catcodes
+# catalog-date 2012-11-08 10:49:44 +0100
+# catalog-license lppl1.3
+# catalog-version 0.3a
 Name:		texlive-catcodes
-Version:	20121030
+Epoch:		1
+Version:	0.3a
 Release:	1
-Summary:	TeXLive catcodes package
+Summary:	Generic handling of TeX category codes
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/macros/generic/catcodes
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.source.tar.xz
@@ -20,7 +21,13 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-TeXLive catcodes package.
+The bundle deals with category code switching; the packages of
+the bundle should work with any TeX format (with the support of
+the plainpkg package). The bundle provides: - stacklet.sty,
+which supports stacks that control the use of different
+catcodes; - actcodes.sty, which deals with active characters;
+and - catchdq.sty, which provides a simple quotation character
+control mechanism.
 
 %post
     %{_sbindir}/texlive.post
@@ -41,6 +48,9 @@ TeXLive catcodes package.
 %doc %{_texmfdistdir}/doc/generic/catcodes/catcodes.pdf
 #- source
 %doc %{_texmfdistdir}/source/generic/catcodes/catcodes.tex
+%doc %{_texmfdistdir}/source/generic/catcodes/fdatechk.tex
+%doc %{_texmfdistdir}/source/generic/catcodes/makedoc.cfg
+%doc %{_texmfdistdir}/source/generic/catcodes/mdoccorr.cfg
 %doc %{_texmfdistdir}/source/generic/catcodes/srcfiles.tex
 
 #-----------------------------------------------------------------------
