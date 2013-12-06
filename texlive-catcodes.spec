@@ -7,7 +7,7 @@
 Name:		texlive-catcodes
 Epoch:		1
 Version:	0.3a
-Release:	4
+Release:	5
 Summary:	Generic handling of TeX category codes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/catcodes
