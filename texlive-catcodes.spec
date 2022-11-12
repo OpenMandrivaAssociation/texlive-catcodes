@@ -6,9 +6,9 @@ Summary:	Generic handling of TeX category codes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/catcodes
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.r38859.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.doc.r38859.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.source.r38859.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
