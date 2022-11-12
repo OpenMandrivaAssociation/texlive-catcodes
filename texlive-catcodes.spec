@@ -1,20 +1,14 @@
-# revision 28210
-# category Package
-# catalog-ctan /macros/generic/catcodes
-# catalog-date 2012-11-08 10:49:44 +0100
-# catalog-license lppl1.3
-# catalog-version 0.3a
 Name:		texlive-catcodes
 Epoch:		1
-Version:	r0.2
-Release:	2
+Version:	38859
+Release:	1
 Summary:	Generic handling of TeX category codes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/catcodes
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.r38859.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.doc.r38859.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.source.r38859.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ and - catchdq.sty, which provides a simple quotation character
 control mechanism.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -55,7 +49,8 @@ control mechanism.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
