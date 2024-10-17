@@ -4,7 +4,7 @@ Version:	38859
 Release:	2
 Summary:	Generic handling of TeX category codes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/catcodes
+URL:		https://www.ctan.org/tex-archive/macros/generic/catcodes
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catcodes.doc.r%{version}.tar.xz
